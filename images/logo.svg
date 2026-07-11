@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="200" height="50">
+  <!-- Icon: Upward trending chart integrated with geometric A shape -->
+  <g id="icon" transform="translate(0, 5)">
+    <!-- Background rounded square -->
+    <rect x="0" y="0" width="40" height="40" rx="8" fill="#0A2540"/>
+    <!-- Letter A geometric shape -->
+    <polygon points="20,6 10,34 14,34 17,26 23,26 26,34 30,34" fill="none" stroke="#00A67E" stroke-width="2.5" stroke-linejoin="round"/>
+    <line x1="15" y1="24" x2="25" y2="24" stroke="#00A67E" stroke-width="2.5"/>
+    <!-- Upward trending line overlaid -->
+    <polyline points="8,30 15,20 22,25 32,12" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+    <!-- Arrow head -->
+    <polyline points="29,10 32,12 30,15" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  </g>
+  <!-- Wordmark -->
+  <g id="wordmark" transform="translate(48, 0)">
+    <text x="0" y="26" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#0A2540" letter-spacing="-0.3">Abdul Majeed</text>
+    <text x="0" y="42" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#00A67E" letter-spacing="1.5">SEO SPECIALIST</text>
+  </g>
+</svg>
