@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520" font-family="Google Sans, Roboto, Arial, sans-serif">
+
+  <!-- Page background -->
+  <rect width="900" height="520" fill="#f8f9fa"/>
+
+  <!-- Left sidebar -->
+  <rect width="56" height="520" fill="#1a1a2e"/>
+  <!-- Sidebar icons (simplified) -->
+  <rect x="16" y="16" width="24" height="24" rx="4" fill="rgba(255,255,255,0.15)"/>
+  <text x="28" y="33" font-size="13" fill="#e8eaed" text-anchor="middle">G</text>
+  <rect x="14" y="64" width="28" height="3" rx="1.5" fill="rgba(255,255,255,0.3)"/>
+  <rect x="14" y="72" width="20" height="3" rx="1.5" fill="rgba(255,255,255,0.15)"/>
+  <rect x="14" y="100" width="28" height="3" rx="1.5" fill="rgba(255,255,255,0.15)"/>
+  <rect x="14" y="108" width="20" height="3" rx="1.5" fill="rgba(255,255,255,0.15)"/>
+  <rect x="14" y="136" width="28" height="3" rx="1.5" fill="rgba(255,255,255,0.15)"/>
+  <rect x="14" y="144" width="20" height="3" rx="1.5" fill="rgba(255,255,255,0.15)"/>
+
+  <!-- Main content area -->
+  <rect x="56" width="844" height="520" fill="#f8f9fa"/>
+
+  <!-- Top bar -->
+  <rect x="56" y="0" width="844" height="48" fill="#ffffff"/>
+  <rect x="56" y="47" width="844" height="1" fill="#e0e0e0"/>
+
+  <!-- GA4 branding -->
+  <text x="72" y="30" font-size="16" font-weight="500" fill="#e37400">Analytics</text>
+  <rect x="146" y="14" width="1" height="18" fill="#dadce0"/>
+  <text x="156" y="30" font-size="13" fill="#5f6368">Abdul Majeed SEO</text>
+  <text x="340" y="30" font-size="13" fill="#5f6368">Traffic acquisition</text>
+
+  <!-- Date range chip -->
+  <rect x="680" y="13" width="200" height="24" rx="12" fill="#e8f0fe"/>
+  <text x="720" y="29" font-size="11" fill="#1a73e8" font-weight="500">Jan 1 – Jun 30, 2024</text>
+  <text x="692" y="29" font-size="11" fill="#1a73e8">&#128197;</text>
+
+  <!-- Page title -->
+  <text x="72" y="76" font-size="18" font-weight="500" fill="#202124">Traffic acquisition</text>
+  <text x="72" y="94" font-size="12" fill="#5f6368">How users arrived at your site</text>
+
+  <!-- METRIC CARDS -->
+  <!-- Users -->
+  <rect x="72" y="108" width="180" height="78" rx="8" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="86" y="128" font-size="11" fill="#5f6368">Users</text>
+  <text x="86" y="158" font-size="24" font-weight="600" fill="#202124">18,420</text>
+  <text x="86" y="175" font-size="11" fill="#34a853">&#9650; 189%</text>
+  <text x="108" y="175" font-size="11" fill="#5f6368">vs prev. period</text>
+
+  <!-- Sessions -->
+  <rect x="262" y="108" width="180" height="78" rx="8" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="276" y="128" font-size="11" fill="#5f6368">Sessions</text>
+  <text x="276" y="158" font-size="24" font-weight="600" fill="#202124">24,850</text>
+  <text x="276" y="175" font-size="11" fill="#34a853">&#9650; 207%</text>
+  <text x="298" y="175" font-size="11" fill="#5f6368">vs prev. period</text>
+
+  <!-- Engaged sessions -->
+  <rect x="452" y="108" width="180" height="78" rx="8" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="466" y="128" font-size="11" fill="#5f6368">Engaged sessions</text>
+  <text x="466" y="158" font-size="24" font-weight="600" fill="#202124">16,940</text>
+  <text x="466" y="175" font-size="11" fill="#34a853">&#9650; 231%</text>
+  <text x="488" y="175" font-size="11" fill="#5f6368">vs prev. period</text>
+
+  <!-- Engagement rate -->
+  <rect x="642" y="108" width="180" height="78" rx="8" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="656" y="128" font-size="11" fill="#5f6368">Engagement rate</text>
+  <text x="656" y="158" font-size="24" font-weight="600" fill="#202124">68.2%</text>
+  <text x="656" y="175" font-size="11" fill="#34a853">&#9650; 8.4%</text>
+  <text x="678" y="175" font-size="11" fill="#5f6368">vs prev. period</text>
+
+  <!-- LINE CHART PANEL -->
+  <rect x="72" y="198" width="540" height="200" rx="8" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="88" y="220" font-size="12" font-weight="500" fill="#202124">Sessions over time</text>
+
+  <!-- Chart legend -->
+  <rect x="88" y="228" width="10" height="3" rx="1.5" fill="#1a73e8"/>
+  <text x="102" y="233" font-size="10" fill="#5f6368">Organic Search</text>
+  <rect x="178" y="228" width="10" height="3" rx="1.5" fill="#fbbc04"/>
+  <text x="192" y="233" font-size="10" fill="#5f6368">Direct</text>
+
+  <!-- Chart grid -->
+  <line x1="88" y1="245" x2="594" y2="245" stroke="#f1f3f4" stroke-width="1"/>
+  <line x1="88" y1="265" x2="594" y2="265" stroke="#f1f3f4" stroke-width="1"/>
+  <line x1="88" y1="285" x2="594" y2="285" stroke="#f1f3f4" stroke-width="1"/>
+  <line x1="88" y1="305" x2="594" y2="305" stroke="#f1f3f4" stroke-width="1"/>
+  <line x1="88" y1="325" x2="594" y2="325" stroke="#f1f3f4" stroke-width="1"/>
+  <line x1="88" y1="380" x2="594" y2="380" stroke="#e0e0e0" stroke-width="1"/>
+
+  <!-- Y-axis labels -->
+  <text x="83" y="248" font-size="9" fill="#80868b" text-anchor="end">5K</text>
+  <text x="83" y="288" font-size="9" fill="#80868b" text-anchor="end">3K</text>
+  <text x="83" y="328" font-size="9" fill="#80868b" text-anchor="end">1K</text>
+
+  <!-- X-axis labels -->
+  <text x="100" y="393" font-size="9" fill="#80868b" text-anchor="middle">Jan</text>
+  <text x="200" y="393" font-size="9" fill="#80868b" text-anchor="middle">Feb</text>
+  <text x="300" y="393" font-size="9" fill="#80868b" text-anchor="middle">Mar</text>
+  <text x="400" y="393" font-size="9" fill="#80868b" text-anchor="middle">Apr</text>
+  <text x="490" y="393" font-size="9" fill="#80868b" text-anchor="middle">May</text>
+  <text x="574" y="393" font-size="9" fill="#80868b" text-anchor="middle">Jun</text>
+
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="organicGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a73e8" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#1a73e8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="directGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbbc04" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#fbbc04" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropshadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#00000014"/>
+    </filter>
+  </defs>
+
+  <!-- Direct traffic area + line (lower) -->
+  <path d="M92,368 L192,362 L292,355 L392,348 L482,340 L566,334 L566,380 L92,380 Z" fill="url(#directGrad)"/>
+  <polyline points="92,368 192,362 292,355 392,348 482,340 566,334"
+            fill="none" stroke="#fbbc04" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Organic search area + line (dominant, growing) -->
+  <path d="M92,372 L192,365 L292,352 L392,330 L482,298 L566,258 L566,380 L92,380 Z" fill="url(#organicGrad)"/>
+  <polyline points="92,372 192,365 292,352 392,330 482,298 566,258"
+            fill="none" stroke="#1a73e8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Data point at end -->
+  <circle cx="566" cy="258" r="4" fill="#1a73e8" stroke="#fff" stroke-width="2"/>
+
+  <!-- Tooltip -->
+  <rect x="490" y="232" width="110" height="50" rx="4" fill="#fff" stroke="#dadce0" stroke-width="1" filter="url(#dropshadow)"/>
+  <text x="498" y="248" font-size="10" fill="#5f6368">Jun 30, 2024</text>
+  <rect x="498" y="253" width="8" height="2" rx="1" fill="#1a73e8"/>
+  <text x="510" y="256" font-size="10" fill="#1a73e8">Organic: <tspan font-weight="600">4,820</tspan></text>
+  <rect x="498" y="263" width="8" height="2" rx="1" fill="#fbbc04"/>
+  <text x="510" y="267" font-size="10" fill="#80868b">Direct: <tspan font-weight="600">640</tspan></text>
+
+  <!-- CHANNEL TABLE PANEL -->
+  <rect x="622" y="198" width="260" height="200" rx="8" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="638" y="220" font-size="12" font-weight="500" fill="#202124">Top channels</text>
+
+  <!-- Table header -->
+  <rect x="622" y="228" width="260" height="1" fill="#e0e0e0"/>
+  <text x="638" y="242" font-size="10" fill="#5f6368" font-weight="600">Channel</text>
+  <text x="810" y="242" font-size="10" fill="#5f6368" font-weight="600" text-anchor="end">Sessions</text>
+  <rect x="622" y="247" width="260" height="1" fill="#e0e0e0"/>
+
+  <!-- Channel rows -->
+  <!-- Organic Search -->
+  <rect x="636" y="254" width="8" height="8" rx="2" fill="#1a73e8"/>
+  <text x="650" y="263" font-size="11" fill="#202124">Organic Search</text>
+  <text x="874" y="263" font-size="11" fill="#202124" text-anchor="end">14,220</text>
+  <!-- Bar -->
+  <rect x="636" y="267" width="218" height="4" rx="2" fill="#f1f3f4"/>
+  <rect x="636" y="267" width="160" height="4" rx="2" fill="#1a73e8" opacity="0.7"/>
+  <rect x="622" y="278" width="260" height="1" fill="#f1f3f4"/>
+
+  <!-- Direct -->
+  <rect x="636" y="285" width="8" height="8" rx="2" fill="#fbbc04"/>
+  <text x="650" y="294" font-size="11" fill="#202124">Direct</text>
+  <text x="874" y="294" font-size="11" fill="#202124" text-anchor="end">4,890</text>
+  <rect x="636" y="298" width="218" height="4" rx="2" fill="#f1f3f4"/>
+  <rect x="636" y="298" width="55" height="4" rx="2" fill="#fbbc04" opacity="0.7"/>
+  <rect x="622" y="309" width="260" height="1" fill="#f1f3f4"/>
+
+  <!-- Referral -->
+  <rect x="636" y="316" width="8" height="8" rx="2" fill="#34a853"/>
+  <text x="650" y="325" font-size="11" fill="#202124">Referral</text>
+  <text x="874" y="325" font-size="11" fill="#202124" text-anchor="end">2,940</text>
+  <rect x="636" y="329" width="218" height="4" rx="2" fill="#f1f3f4"/>
+  <rect x="636" y="329" width="33" height="4" rx="2" fill="#34a853" opacity="0.7"/>
+  <rect x="622" y="340" width="260" height="1" fill="#f1f3f4"/>
+
+  <!-- Social -->
+  <rect x="636" y="347" width="8" height="8" rx="2" fill="#ea4335"/>
+  <text x="650" y="356" font-size="11" fill="#202124">Organic Social</text>
+  <text x="874" y="356" font-size="11" fill="#202124" text-anchor="end">1,680</text>
+  <rect x="636" y="360" width="218" height="4" rx="2" fill="#f1f3f4"/>
+  <rect x="636" y="360" width="19" height="4" rx="2" fill="#ea4335" opacity="0.7"/>
+  <rect x="622" y="371" width="260" height="1" fill="#f1f3f4"/>
+
+  <!-- Email -->
+  <rect x="636" y="378" width="8" height="8" rx="2" fill="#a142f4"/>
+  <text x="650" y="387" font-size="11" fill="#202124">Email</text>
+  <text x="874" y="387" font-size="11" fill="#202124" text-anchor="end">1,120</text>
+
+  <!-- BOTTOM ROW: Comparison + Landing pages -->
+  <rect x="72" y="410" width="358" height="100" rx="8" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="88" y="430" font-size="12" font-weight="500" fill="#202124">Organic sessions vs. previous period</text>
+
+  <!-- Comparison mini chart -->
+  <text x="88" y="450" font-size="10" fill="#5f6368">Jan–Jun 2023</text>
+  <rect x="88" y="454" width="160" height="6" rx="3" fill="#e0e0e0"/>
+  <rect x="88" y="454" width="50" height="6" rx="3" fill="#80868b"/>
+  <text x="254" y="462" font-size="11" fill="#80868b">4,820</text>
+
+  <text x="88" y="475" font-size="10" fill="#1a73e8" font-weight="500">Jan–Jun 2024</text>
+  <rect x="88" y="479" width="160" height="6" rx="3" fill="#e8f0fe"/>
+  <rect x="88" y="479" width="160" height="6" rx="3" fill="#1a73e8" opacity="0.8"/>
+  <text x="254" y="487" font-size="11" fill="#1a73e8" font-weight="600">14,220</text>
+
+  <text x="88" y="504" font-size="10" fill="#34a853">&#9650; +195% increase in organic sessions</text>
+
+  <!-- Landing pages panel -->
+  <rect x="440" y="410" width="442" height="100" rx="8" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="456" y="430" font-size="12" font-weight="500" fill="#202124">Top landing pages (Organic)</text>
+  <rect x="440" y="437" width="442" height="1" fill="#e0e0e0"/>
+
+  <text x="456" y="452" font-size="11" fill="#1a73e8">/</text>
+  <text x="720" y="452" font-size="11" fill="#202124" text-anchor="end">3,210 sessions</text>
+  <rect x="440" y="457" width="442" height="1" fill="#f1f3f4"/>
+
+  <text x="456" y="472" font-size="11" fill="#1a73e8">/seo-services</text>
+  <text x="720" y="472" font-size="11" fill="#202124" text-anchor="end">2,480 sessions</text>
+  <rect x="440" y="477" width="442" height="1" fill="#f1f3f4"/>
+
+  <text x="456" y="492" font-size="11" fill="#1a73e8">/local-seo</text>
+  <text x="720" y="492" font-size="11" fill="#202124" text-anchor="end">1,640 sessions</text>
+  <rect x="440" y="497" width="442" height="1" fill="#f1f3f4"/>
+
+  <text x="456" y="512" font-size="11" fill="#1a73e8">/contact</text>
+  <text x="720" y="512" font-size="11" fill="#202124" text-anchor="end">1,220 sessions</text>
+
+</svg>
