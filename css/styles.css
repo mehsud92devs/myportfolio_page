@@ -1007,6 +1007,12 @@ p:last-child { margin-bottom: 0; }
   object-fit: cover;
 }
 
+.proof-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .placeholder-img {
   display: flex;
   flex-direction: column;
