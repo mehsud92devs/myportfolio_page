@@ -1118,6 +1118,157 @@ p:last-child { margin-bottom: 0; }
   flex-wrap: wrap;
 }
 
+/* ---- Needle Section (Results + Expertise) ---- */
+.needle-section {
+  background-color: var(--primary);
+}
+
+.needle-intro {
+  margin-bottom: 3rem;
+}
+
+.needle-intro .section-label {
+  color: var(--accent);
+  border-color: rgba(0,166,126,0.3);
+  background-color: rgba(0,166,126,0.1);
+}
+
+.needle-intro .section-title {
+  color: #ffffff;
+}
+
+.needle-subtitle {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.65);
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Result Cards */
+.needle-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.needle-card {
+  position: relative;
+  background-color: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 2rem 2rem 1.75rem;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.needle-card:hover {
+  transform: translateY(-4px);
+  background-color: rgba(255,255,255,0.08);
+  box-shadow: 0 20px 48px rgba(0,0,0,0.3);
+}
+
+.needle-card--highlight {
+  background: linear-gradient(135deg, var(--accent) 0%, #00c49a 100%);
+  border-color: transparent;
+}
+
+.needle-card--highlight:hover {
+  background: linear-gradient(135deg, #00b88a 0%, #00d4a8 100%);
+}
+
+.needle-card-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), #3B82F6);
+  border-radius: 16px 16px 0 0;
+}
+
+.needle-card-accent--white {
+  background: rgba(255,255,255,0.4);
+}
+
+.needle-card-stat {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 0.4rem;
+}
+
+.needle-card--highlight .needle-card-stat {
+  color: #ffffff;
+}
+
+.needle-card-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 0.85rem;
+}
+
+.needle-card--highlight .needle-card-label {
+  color: rgba(255,255,255,0.85);
+}
+
+.needle-card-desc {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.needle-card--highlight .needle-card-desc {
+  color: rgba(255,255,255,0.8);
+}
+
+/* Expertise Tags */
+.needle-tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.needle-tag {
+  display: inline-block;
+  padding: 0.45rem 1rem;
+  background-color: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.8);
+  letter-spacing: 0.01em;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  cursor: default;
+}
+
+.needle-tag:hover {
+  background-color: rgba(0,166,126,0.15);
+  border-color: rgba(0,166,126,0.4);
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .needle-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .needle-card-stat {
+    font-size: 2.5rem;
+  }
+}
+
 /* SEO Wheel hero image */
 .seo-wheel-img {
   width: 100%;
