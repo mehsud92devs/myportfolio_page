@@ -32,19 +32,32 @@ const googleProvider = new GoogleAuthProvider();
 
 // ---- Error Messages ----
 const AUTH_ERRORS = {
-  'auth/user-not-found':      'No account found with this email address.',
-  'auth/wrong-password':      'Incorrect password. Please try again.',
-  'auth/too-many-requests':   'Too many failed attempts. Please try again later.',
-  'auth/email-already-in-use':'An account with this email already exists.',
-  'auth/weak-password':       'Password must be at least 6 characters.',
-  'auth/invalid-email':       'Please enter a valid email address.',
-  'auth/popup-closed-by-user':'Sign-in popup was closed. Please try again.',
-  'auth/network-request-failed': 'Network error. Please check your connection.',
-  'auth/invalid-credential':  'Incorrect email or password. Please try again.'
+  'auth/user-not-found':           'No account found with this email address.',
+  'auth/wrong-password':           'Incorrect password. Please try again.',
+  'auth/too-many-requests':        'Too many failed attempts. Please try again later.',
+  'auth/email-already-in-use':     'An account with this email already exists.',
+  'auth/weak-password':            'Password must be at least 6 characters.',
+  'auth/invalid-email':            'Please enter a valid email address.',
+  'auth/popup-closed-by-user':     'Sign-in popup was closed. Please try again.',
+  'auth/popup-blocked':            'Popup was blocked by your browser. Please allow popups for this site.',
+  'auth/cancelled-popup-request':  'Sign-in cancelled. Please try again.',
+  'auth/network-request-failed':   'Network error. Please check your connection and try again.',
+  'auth/invalid-credential':       'Incorrect email or password. Please try again.',
+  'auth/operation-not-allowed':    'This sign-in method is not enabled. Please contact support.',
+  'auth/unauthorized-domain':      'This domain is not authorised for sign-in. Please contact support.',
+  'auth/app-not-authorized':       'This app is not authorised to use Firebase Authentication.',
+  'auth/internal-error':           'An internal error occurred. Please try again.',
+  'auth/missing-email':            'Please enter your email address.',
+  'auth/missing-password':         'Please enter your password.',
+  'auth/user-disabled':            'This account has been disabled. Please contact support.',
+  'auth/account-exists-with-different-credential': 'An account already exists with this email using a different sign-in method.',
 };
 
-function getAuthErrorMessage(code) {
-  return AUTH_ERRORS[code] || 'Something went wrong. Please try again.';
+function getAuthErrorMessage(code, err) {
+  if (AUTH_ERRORS[code]) return AUTH_ERRORS[code];
+  // Show the raw code in the message so the issue can be identified
+  console.error('Firebase auth error:', err);
+  return 'Sign-in failed (' + (code || 'unknown') + '). Please try again or contact support.';
 }
 
 // ---- Show / Hide Error ----
@@ -137,7 +150,7 @@ window.handleLogout = async function() {
       await signInWithEmailAndPassword(auth, email, password);
       window.location.href = 'index.html';
     } catch (err) {
-      showAuthError('auth-error', getAuthErrorMessage(err.code));
+      showAuthError('auth-error', getAuthErrorMessage(err.code, err));
       btn.disabled = false;
       btn.textContent = 'Log In';
     }
@@ -152,8 +165,8 @@ window.handleLogout = async function() {
         await signInWithPopup(auth, googleProvider);
         window.location.href = 'index.html';
       } catch (err) {
-        if (err.code !== 'auth/popup-closed-by-user') {
-          showAuthError('auth-error', getAuthErrorMessage(err.code));
+        if (err.code !== 'auth/popup-closed-by-user' && err.code !== 'auth/cancelled-popup-request') {
+          showAuthError('auth-error', getAuthErrorMessage(err.code, err));
         }
       }
     });
@@ -175,7 +188,7 @@ window.handleLogout = async function() {
         document.getElementById('auth-error').style.color = 'var(--accent)';
         document.getElementById('auth-error').style.backgroundColor = 'rgba(0,166,126,0.08)';
       } catch (err) {
-        showAuthError('auth-error', getAuthErrorMessage(err.code));
+        showAuthError('auth-error', getAuthErrorMessage(err.code, err));
       }
     });
   }
@@ -265,7 +278,7 @@ window.handleLogout = async function() {
       await updateProfile(credential.user, { displayName: name });
       window.location.href = 'index.html';
     } catch (err) {
-      showAuthError('auth-error', getAuthErrorMessage(err.code));
+      showAuthError('auth-error', getAuthErrorMessage(err.code, err));
       btn.disabled = false;
       btn.textContent = 'Create Account';
     }
@@ -280,8 +293,8 @@ window.handleLogout = async function() {
         await signInWithPopup(auth, googleProvider);
         window.location.href = 'index.html';
       } catch (err) {
-        if (err.code !== 'auth/popup-closed-by-user') {
-          showAuthError('auth-error', getAuthErrorMessage(err.code));
+        if (err.code !== 'auth/popup-closed-by-user' && err.code !== 'auth/cancelled-popup-request') {
+          showAuthError('auth-error', getAuthErrorMessage(err.code, err));
         }
       }
     });
