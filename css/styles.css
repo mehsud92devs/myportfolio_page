@@ -1204,6 +1204,15 @@ p:last-child { margin-bottom: 0; }
   line-height: 1;
 }
 
+.profile-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center top;
+}
+
 .profile-namecard {
   text-align: center;
   padding: 1.5rem;
