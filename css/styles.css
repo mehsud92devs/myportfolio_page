@@ -107,6 +107,21 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: 0.75rem;
 }
 
+.service-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+}
+
 .section-title {
   margin-bottom: 1rem;
 }
@@ -1388,11 +1403,17 @@ p:last-child { margin-bottom: 0; }
   background-color: var(--secondary);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  padding: 2rem;
+  overflow: hidden;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   min-height: 280px;
+}
+
+.service-visual svg {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* ---- Contact Page ---- */
