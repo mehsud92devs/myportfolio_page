@@ -480,18 +480,8 @@ p:last-child { margin-bottom: 0; }
 }
 
 .footer-logo img {
-  height: 36px;
-  filter: brightness(0) invert(1);
-}
-
-.footer-logo-text .logo-name {
-  color: var(--white);
-  font-size: 1rem;
-}
-
-.footer-logo-text .logo-title {
-  color: var(--accent);
-  font-size: 0.65rem;
+  height: 45px;
+  width: auto;
 }
 
 .footer-tagline {
